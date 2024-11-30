@@ -1,27 +1,65 @@
-# Algo
+# Integracion de una API con Angular
+Este proyecto de Angular 18.2 está diseñado para consumir una API de usuarios, una API de Rick and Morty y mostrarlos en una tabla
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+## Caracteristicas
+Validacion del login con la API de Usuarios
+Se muestran los usuarios de la Api en una tabla
+Consumo de API: Obtención de datos de usuario desde una API
+Se consume la API de Rick and Morty
+Se muestran los personajes de la serie de Rick and Morty en una tabla
 
-## Development server
+## Link de la Api de Usuarios
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### Get all items
 
-## Code scaffolding
+```https:
+https//api.escuelajs.co/api/v1/users
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Link de la Api de Rick and Morty
 
-## Build
+#### Get all items
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```https:
+https://rickandmortyapi.com/api/character
+```
+## Dasboard con Usuarios
+![Pantalla de Login](public/image/login-rick.jpg)
 
-## Running unit tests
+## Dasboard con Usuarios
+![API de Rick and Morty](public/image/Captura%20de%20pantalla%202024-11-29%20192418.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Ejecucion de la aplicacion de manera local
 
-## Running end-to-end tests
+Clona el repositorio
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+  https://github.com/Ferchox45/prograwebLFCH-API.git
+```
 
-## Further help
+Vamos a la carpeta del proyecto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+  cd prograwebLFCH-API
+```
+
+Instalamos dependencias
+
+```bash
+  npm install
+```
+
+Corremos el servidor de manera local
+
+```bash
+  ng serve
+```
+Abrimos la siguiente ruta en nuestro navegador:
+
+```bash
+ http://localhost:4200/
+```
+
+
+## Licencia
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
