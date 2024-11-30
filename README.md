@@ -23,10 +23,10 @@ https//api.escuelajs.co/api/v1/users
 ```https:
 https://rickandmortyapi.com/api/character
 ```
-## Dasboard con Usuarios
+## Login
 ![Pantalla de Login](public/image/login-rick.jpg)
 
-## Dasboard con Usuarios
+## Dasboard con personajes de la serie de Rick and Morty
 ![API de Rick and Morty](public/image/Captura%20de%20pantalla%202024-11-29%20192418.png)
 
 ## Ejecucion de la aplicacion de manera local
