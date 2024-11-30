@@ -1,0 +1,33 @@
+<div class="login-container d-flex justify-content-center align-items-center vh-100" style="background-color: #17a2b8;">
+    <mat-card class="login-card text-center p-4">
+      <!-- Ícono de inicio de sesión -->
+      <div class="mb-3 d-flex justify-content-center">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a21875f1-2ef0-412b-8509-fe8928c12cec/dfdqiz6-878e728a-f93a-4664-ab31-0ceb9d70f5b2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EyMTg3NWYxLTJlZjAtNDEyYi04NTA5LWZlODkyOGMxMmNlY1wvZGZkcWl6Ni04NzhlNzI4YS1mOTNhLTQ2NjQtYWIzMS0wY2ViOWQ3MGY1YjIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6cgtV7fh8VZv640Ri9amrqUKEQ6saTENlDhR-qTW1EI" 
+          alt="Logo" class="logo" style="width: 80px; height: 80px;">
+      </div>
+      <h2 class="fs-1 fw-bold mb-4">Iniciar sesión</h2>
+      <form (ngSubmit)="onSubmit()" class="d-flex flex-column align-items-center">
+        <mat-form-field class="full-width mb-4">
+          <mat-label>Correo electrónico</mat-label>
+          <input matInput placeholder="Correo electrónico" [formControl]="email" required />
+          <mat-error *ngIf="email.hasError('required')">Debes ingresar un correo</mat-error>
+          <mat-error *ngIf="email.hasError('email')">No es un correo válido</mat-error>
+        </mat-form-field>
+  
+        <mat-form-field class="full-width mb-4">
+          <mat-label>Contraseña</mat-label>
+          <input matInput type="password" [(ngModel)]="password" name="password" required />
+        </mat-form-field>
+  
+        <div class="d-flex justify-content-start align-items-center gap-2 mb-4 full-width">
+          <mat-checkbox>Recuérdame</mat-checkbox>
+        </div>
+  
+        <button mat-raised-button color="primary" class="w-100 fw-semibold shadow-sm" type="submit">
+          Iniciar sesión
+        </button>
+      </form>
+      <p *ngIf="error" class="error mt-3 text-danger">{{ error }}</p>
+    </mat-card>
+  </div>
+  

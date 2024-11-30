@@ -1,0 +1,65 @@
+.table {
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .table thead th {
+    text-align: center;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .img-thumbnail {
+    border: 2px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pagination {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pagination-controls {
+    display: inline-block;
+  }
+  
+  .pagination-controls .ngx-pagination .current {
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+  }
+  
+  .pagination-controls .ngx-pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .table-bordered {
+    border: 2px solid #000; /* Bordes más gruesos */
+  }
+  
+  .table-bordered th,
+  .table-bordered td {
+    border: 2px solid #000; /* Bordes más visibles para cada celda */
+  }
+  
+  .table thead th {
+    border-bottom: 3px solid #fff; /* Bordes inferiores del encabezado */
+  }
+  
+  .table td {
+    vertical-align: middle;
+  }
+  
+  .table .btn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
